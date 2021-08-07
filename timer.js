@@ -22,6 +22,10 @@ const Timer = (props) => {
       let textMinute = Math.floor((gap % hours) / minutes);
       let textSecond = Math.floor((gap % minutes) / seconds);
      
+     textHour = textHour < 10 ? '0' + textHour : textHour
+     textMinute = textMinute < 10 ? '0' + textMinute : textMinute
+     textSecond = textSecond < 10 ? '0' + textSecond : textSecond
+     
       setDays(textDay);
       setHours(textHour);
       setMinutes(textMinute);
