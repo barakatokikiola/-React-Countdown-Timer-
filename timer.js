@@ -8,7 +8,7 @@ const Timer = (props) => {
   const [seconds, setSeconds]=useState(0)
   
    const countdown = () => {
-     const dateCounter = new Date('September 1,2021 00:00:00').getTime();
+     const dateCounter = new Date('January 1,2022 00:00:00').getTime();
      const now = new Date().getTime();
      const gap = dateCounter - now;
   
@@ -26,6 +26,7 @@ const Timer = (props) => {
      textMinute = textMinute < 10 ? '0' + textMinute : textMinute
      textSecond = textSecond < 10 ? '0' + textSecond : textSecond
      
+     
       setDays(textDay);
       setHours(textHour);
       setMinutes(textMinute);
@@ -38,7 +39,7 @@ const Timer = (props) => {
       
   return(
       <section id = 'container'>
-      <h1>Launching in...</h1>
+      <h1>Keep Calm, New Year 2022 is in...</h1>
             <div id = 'countdown'>
       
        <div> 
